@@ -1,6 +1,10 @@
-# CONTRIBUTING.md
+# Housekeeping
 
-## Welcome!
+A Node.js application for housekeeping tasks and utilities.
+
+## CONTRIBUTING.md
+
+### Welcome!
 We value quality, clarity, and teamwork. Contributions—code, docs, ideas—are welcome. Please follow these steps:
 
 ## How to Contribute
