@@ -1,0 +1,96 @@
+<% 
+var body = `
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content container">
+    <h1>Revolutionize Your Management Approach</h1>
+    <p>InnovateMax empowers organizations with cutting-edge management innovation tools designed for the modern business landscape. Experience unprecedented efficiency, collaboration, and growth.</p>
+    <a href="/features" class="btn btn-primary">Explore Features</a>
+    <a href="/contact" class="btn btn-secondary">Get Started</a>
+  </div>
+</section>
+
+<!-- Key Features Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Transform Your Business Operations</h2>
+      <p class="section-subtitle">Discover the power of intelligent management innovation</p>
+    </div>
+    
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <h3>Performance Acceleration</h3>
+        <p>Boost productivity by 300% with our AI-powered workflow optimization engine that learns and adapts to your team's unique patterns.</p>
+      </div>
+      
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3>Intelligent Analytics</h3>
+        <p>Make data-driven decisions with advanced analytics and predictive insights that transform raw information into actionable strategies.</p>
+      </div>
+      
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Collaborative Innovation</h3>
+        <p>Foster team synergy with integrated collaboration tools that break down silos and accelerate innovation across your organization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="section" style="background-color: var(--background-light);">
+  <div class="container">
+    <div class="section-title">
+      <h2>Why Choose InnovateMax?</h2>
+      <p class="section-subtitle">Leading organizations trust us to drive their digital transformation</p>
+    </div>
+    
+    <div class="grid grid-2">
+      <div>
+        <h3>🚀 Lightning-Fast Implementation</h3>
+        <p>Get up and running in under 24 hours with our streamlined onboarding process and intuitive interface design.</p>
+        
+        <h3>🔒 Enterprise-Grade Security</h3>
+        <p>Your data is protected with military-grade encryption and compliance with international security standards.</p>
+        
+        <h3>📈 Measurable ROI</h3>
+        <p>Our clients report an average 250% ROI within the first six months of implementation.</p>
+      </div>
+      
+      <div>
+        <h3>🌐 Global Scalability</h3>
+        <p>Scale seamlessly from startup to enterprise with our cloud-native architecture designed for growth.</p>
+        
+        <h3>🎯 Customizable Solutions</h3>
+        <p>Tailor every aspect of the platform to match your unique business processes and industry requirements.</p>
+        
+        <h3>🏆 Award-Winning Support</h3>
+        <p>Access 24/7 expert support from our team of management innovation specialists.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Ready to Transform Your Business?</h2>
+      <p class="section-subtitle">Join thousands of forward-thinking organizations already using InnovateMax</p>
+      <a href="/contact" class="btn btn-primary">Start Your Innovation Journey</a>
+    </div>
+  </div>
+</section>
+`;
+%>
+
+<%- include('layout', { body: body, title: title, page: page }) %>

@@ -1,0 +1,19 @@
+<% 
+var body = `
+<section class="section" style="padding: 8rem 0; text-align: center;">
+  <div class="container">
+    <div style="max-width: 600px; margin: 0 auto;">
+      <div class="card-icon" style="width: 100px; height: 100px; font-size: 3rem; margin: 0 auto 2rem;">
+        <i class="fas fa-exclamation-triangle"></i>
+      </div>
+      <h1 style="font-size: 4rem; color: var(--primary-color); margin-bottom: 1rem;">500</h1>
+      <h2>Server Error</h2>
+      <p style="font-size: 1.25rem; margin: 2rem 0;">Something went wrong on our end. Please try again later.</p>
+      <a href="/" class="btn btn-primary">Return Home</a>
+    </div>
+  </div>
+</section>
+`;
+%>
+
+<%- include('layout', { body: body, title: title, page: page }) %>
