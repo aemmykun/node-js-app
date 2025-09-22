@@ -1,0 +1,164 @@
+<% 
+var body = `
+<!-- Contact Hero Section -->
+<section class="hero">
+  <div class="hero-content container">
+    <h1>Get in Touch</h1>
+    <p>Ready to transform your organization? Our team of experts is here to help you get started with InnovateMax.</p>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="section">
+  <div class="container">
+    ${typeof success !== 'undefined' ? `<div class="success-message">${success}</div>` : ''}
+    
+    <div class="grid grid-2">
+      <div>
+        <h2>Let's Start Your Innovation Journey</h2>
+        <p>Whether you're looking to streamline operations, boost productivity, or drive innovation across your organization, we're here to help. Fill out the form and one of our experts will get back to you within 24 hours.</p>
+        
+        <div style="margin: 2rem 0;">
+          <h3>What to Expect:</h3>
+          <ul style="color: var(--text-light); margin-left: 1.5rem;">
+            <li><strong>Personalized Consultation:</strong> 30-minute discovery call to understand your needs</li>
+            <li><strong>Custom Demo:</strong> Live demonstration tailored to your use cases</li>
+            <li><strong>Implementation Plan:</strong> Step-by-step roadmap for successful deployment</li>
+            <li><strong>ROI Projection:</strong> Detailed analysis of expected returns and benefits</li>
+          </ul>
+        </div>
+        
+        <div style="margin: 2rem 0;">
+          <h3>Contact Information</h3>
+          <div style="margin: 1rem 0;">
+            <p><i class="fas fa-envelope" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>Email:</strong> hello@innovatemax.com</p>
+            <p><i class="fas fa-phone" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-right: 0.5rem;"></i> <strong>Address:</strong> 123 Innovation Drive, Tech City, TC 12345</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h3>Request a Demo</h3>
+        <form action="/contact" method="POST">
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name *</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address *</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="company" class="form-label">Company Name</label>
+            <input type="text" id="company" name="company" class="form-input">
+          </div>
+          
+          <div class="form-group">
+            <label for="role" class="form-label">Your Role</label>
+            <select id="role" name="role" class="form-input">
+              <option value="">Select your role...</option>
+              <option value="ceo">CEO/President</option>
+              <option value="cto">CTO/Technology Leader</option>
+              <option value="operations">Operations Manager</option>
+              <option value="hr">HR Director</option>
+              <option value="consultant">Management Consultant</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="team-size" class="form-label">Team Size</label>
+            <select id="team-size" name="team-size" class="form-input">
+              <option value="">Select team size...</option>
+              <option value="1-10">1-10 employees</option>
+              <option value="11-50">11-50 employees</option>
+              <option value="51-200">51-200 employees</option>
+              <option value="201-1000">201-1000 employees</option>
+              <option value="1000+">1000+ employees</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="industry" class="form-label">Industry</label>
+            <select id="industry" name="industry" class="form-input">
+              <option value="">Select industry...</option>
+              <option value="technology">Technology</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="finance">Finance</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="retail">Retail</option>
+              <option value="consulting">Consulting</option>
+              <option value="education">Education</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Tell us about your challenges and goals *</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Describe your current management challenges, goals, and what you hope to achieve with InnovateMax..." required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label>
+              <input type="checkbox" required style="margin-right: 0.5rem;">
+              I agree to receive communications from InnovateMax and understand I can unsubscribe at any time.
+            </label>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section" style="background-color: var(--background-light);">
+  <div class="container">
+    <div class="section-title">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    
+    <div class="grid grid-2">
+      <div>
+        <h3>How quickly can we get started?</h3>
+        <p>Most organizations are up and running within 24-48 hours. Our streamlined onboarding process and dedicated customer success team ensure a smooth implementation.</p>
+        
+        <h3>Do you offer training and support?</h3>
+        <p>Yes! We provide comprehensive training programs, 24/7 technical support, and a dedicated customer success manager for enterprise clients.</p>
+        
+        <h3>Is my data secure?</h3>
+        <p>Absolutely. We use military-grade encryption, maintain SOC 2 compliance, and follow strict data protection protocols. Your data is hosted in secure, certified data centers.</p>
+      </div>
+      
+      <div>
+        <h3>Can InnovateMax integrate with our existing tools?</h3>
+        <p>Yes, we offer pre-built integrations with 100+ popular business tools, plus a robust API for custom integrations. Our team can help with setup and configuration.</p>
+        
+        <h3>What's included in the trial?</h3>
+        <p>Our 30-day free trial includes full access to all features, unlimited users, dedicated support, and a personalized onboarding session with our experts.</p>
+        
+        <h3>Do you offer custom solutions?</h3>
+        <p>Absolutely. We work with enterprise clients to create tailored solutions that meet their specific needs, including custom features and white-label options.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Ready to Revolutionize Your Management Approach?</h2>
+      <p class="section-subtitle">Join thousands of organizations already transforming with InnovateMax</p>
+      <a href="#" onclick="document.querySelector('form').scrollIntoView({behavior: 'smooth'})" class="btn btn-primary">Get Your Free Demo</a>
+    </div>
+  </div>
+</section>
+`;
+%>
+
+<%- include('layout', { body: body, title: title, page: page }) %>

@@ -1,0 +1,130 @@
+<% 
+var body = `
+<!-- About Hero Section -->
+<section class="hero">
+  <div class="hero-content container">
+    <h1>About InnovateMax</h1>
+    <p>We're pioneering the future of management innovation with cutting-edge technology and human-centered design.</p>
+  </div>
+</section>
+
+<!-- Company Story Section -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2">
+      <div>
+        <h2>Our Story</h2>
+        <p>Founded in 2020 by a team of management consultants and technology experts, InnovateMax emerged from a simple observation: traditional management tools were failing to keep pace with the rapidly evolving business landscape.</p>
+        
+        <p>We recognized that organizations needed more than just software—they needed a comprehensive platform that could adapt, learn, and evolve with their unique challenges and opportunities.</p>
+        
+        <p>Today, we're proud to serve over 10,000 organizations worldwide, from innovative startups to Fortune 500 companies, helping them unlock their full potential through intelligent management innovation.</p>
+      </div>
+      
+      <div>
+        <h2>Our Mission</h2>
+        <p>To democratize access to world-class management innovation tools and methodologies, empowering every organization to achieve operational excellence and sustainable growth.</p>
+        
+        <h2>Our Vision</h2>
+        <p>A world where every team, regardless of size or industry, has the tools and insights needed to innovate, collaborate, and thrive in the digital age.</p>
+        
+        <h2>Our Values</h2>
+        <ul style="color: var(--text-light); margin-left: 1.5rem;">
+          <li><strong>Innovation First:</strong> We continuously push boundaries</li>
+          <li><strong>Customer Success:</strong> Your success is our success</li>
+          <li><strong>Transparency:</strong> Open, honest communication always</li>
+          <li><strong>Excellence:</strong> We deliver nothing less than exceptional</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="section" style="background-color: var(--background-light);">
+  <div class="container">
+    <div class="section-title">
+      <h2>Meet Our Leadership Team</h2>
+      <p class="section-subtitle">Experienced professionals dedicated to your success</p>
+    </div>
+    
+    <div class="grid grid-3">
+      <div class="card" style="text-align: center;">
+        <div class="card-icon" style="margin: 0 auto 1.5rem;">
+          <i class="fas fa-user-tie"></i>
+        </div>
+        <h3>Sarah Johnson</h3>
+        <p><strong>CEO & Co-Founder</strong></p>
+        <p>Former McKinsey partner with 15 years of experience in organizational transformation and digital innovation.</p>
+      </div>
+      
+      <div class="card" style="text-align: center;">
+        <div class="card-icon" style="margin: 0 auto 1.5rem;">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Michael Chen</h3>
+        <p><strong>CTO & Co-Founder</strong></p>
+        <p>Ex-Google engineering leader specializing in scalable systems and AI/ML applications for business optimization.</p>
+      </div>
+      
+      <div class="card" style="text-align: center;">
+        <div class="card-icon" style="margin: 0 auto 1.5rem;">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>Dr. Amanda Rodriguez</h3>
+        <p><strong>Head of Innovation</strong></p>
+        <p>PhD in Organizational Psychology with expertise in change management and human-centered technology design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Company Stats Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Impact by the Numbers</h2>
+    </div>
+    
+    <div class="grid grid-2">
+      <div class="card" style="text-align: center;">
+        <h3 style="font-size: 3rem; color: var(--primary-color); margin-bottom: 0.5rem;">10,000+</h3>
+        <p><strong>Organizations Served</strong></p>
+        <p>Across 50 countries and 25 industries</p>
+      </div>
+      
+      <div class="card" style="text-align: center;">
+        <h3 style="font-size: 3rem; color: var(--primary-color); margin-bottom: 0.5rem;">250%</h3>
+        <p><strong>Average ROI</strong></p>
+        <p>Achieved within first 6 months</p>
+      </div>
+      
+      <div class="card" style="text-align: center;">
+        <h3 style="font-size: 3rem; color: var(--primary-color); margin-bottom: 0.5rem;">99.9%</h3>
+        <p><strong>Uptime Reliability</strong></p>
+        <p>Enterprise-grade infrastructure</p>
+      </div>
+      
+      <div class="card" style="text-align: center;">
+        <h3 style="font-size: 3rem; color: var(--primary-color); margin-bottom: 0.5rem;">24/7</h3>
+        <p><strong>Expert Support</strong></p>
+        <p>Award-winning customer success team</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact CTA Section -->
+<section class="section" style="background-color: var(--background-light);">
+  <div class="container">
+    <div class="section-title">
+      <h2>Ready to Join Our Success Story?</h2>
+      <p class="section-subtitle">Let's discuss how InnovateMax can transform your organization</p>
+      <a href="/contact" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </div>
+</section>
+`;
+%>
+
+<%- include('layout', { body: body, title: title, page: page }) %>
