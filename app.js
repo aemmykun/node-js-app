@@ -35,28 +35,28 @@ app.use(express.json());
 // Routes
 app.get('/', (req, res) => {
   res.render('index', { 
-    title: 'InnovateMax - Management Innovation Platform',
+    title: 'Arty Hospitality - Managinnovation',
     page: 'home'
   });
 });
 
 app.get('/about', (req, res) => {
   res.render('about', { 
-    title: 'About Us - InnovateMax',
+    title: 'About Us',
     page: 'about'
   });
 });
 
 app.get('/features', (req, res) => {
   res.render('features', { 
-    title: 'Product Features - InnovateMax',
+    title: 'Product Features',
     page: 'features'
   });
 });
 
 app.get('/contact', (req, res) => {
   res.render('contact', { 
-    title: 'Contact Us - InnovateMax',
+    title: 'Contact Us',
     page: 'contact'
   });
 });
@@ -69,7 +69,7 @@ app.post('/contact', (req, res) => {
   console.log('Contact form submission:', { name, email, company, message });
   
   res.render('contact', { 
-    title: 'Contact Us - InnovateMax',
+    title: 'Contact Us',
     page: 'contact',
     success: 'Thank you for your inquiry! We will get back to you soon.'
   });
